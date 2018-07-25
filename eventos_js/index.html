@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Página de teste</title>
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+	<!--
+	<button 
+	onmousedown="apertouMouse()" 
+	onmouseup="soltouMouse()" 
+	onmouseover="mouseEmCima()" 
+	onmouseout="mouseSaiuDeCima()" 
+	onmousemove="mouseSEMoveu()">EU SOU UM BOTÃO</button>-->
+	<button onclick="CLICOU()"
+			oncontextmenu="
+			return apertouBotaoDireiro()"
+			ondblclick="clicouDuasVezes()">EU SOU UM BOTÃO</button> </br></br>
+	<input type="text" value="" autofocus="" onkeydown="apertouTecla(event)"><br/><br/>
+
+	<form method="POST">
+		<input type="text" name="nome" onfocus="focou()"><br/><br/>
+		<select name="cidade" onchange="selectCity(this)" onfocus="focou2()">
+			<option>São Paulo</option>
+			<option>Rio de Janeiro</option>
+			<option>Belo Horizonte</option>
+			<option>Salvador</option>
+		</select><br/><br/>
+		<input type="submit" name="botton" value="Enviar">
+	</form>
+</body>
+</html>

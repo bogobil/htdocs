@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Página de testes</title>
+	<meta charset=utf-8>
+	<script type="text/javascript" src="script.js"></script>
+	<style type="text/css">
+		#n1 {
+			width: 200px;
+			height: 200px;
+			border: 1px solid #000;
+			float: left;
+			margin-right: 10px;
+			font-size: 100px;
+			text-align: center;
+			line-height: 200px;
+			background-color: #EEE;
+			font-family: Impact;
+			color: #000;
+		}
+		#n2 {
+			width: 200px;
+			height: 200px;
+			border: 1px solid #000;
+			float: left;
+			margin-right: 10px;
+			font-size: 100px;
+			text-align: center;
+			line-height: 200px;
+			font-family: Impact;
+			color: #5c5c5c;
+		}
+		#campo1 {
+			width: 200px;
+			height: 200px;
+			border: 1px solid #000;
+			float: left;
+			margin-right: 10px;
+			font-size: 100px;
+			text-align: center;
+			line-height: 200px;
+			font-family: Impact;
+			color: #5c5c5c;
+		}
+		#campo2 {
+			width: 200px;
+			height: 200px;
+			border: 1px solid #000;
+			float: left;
+			margin-right: 10px;
+			font-size: 100px;
+			text-align: center;
+			line-height: 200px;
+			font-family: Impact;
+			color: #5c5c5c;
+		}
+		button {
+			width: 410px;
+			height: 40px;
+			margin-top: 10px;
+			font-size: 22px;
+			font-family: sans-serif;
+		}
+	</style>
+</head>
+<body onload="reset()">
+	Página do Curso de JavaScript! <br /><br /><br /><br />
+		<!--*** Novo Exercício*** -->
+		<div id="n1">0</div>
+		<input type="text" name="box" id="n2"="">
+		<div style="clear: both;"></div>
+		<button onclick="check()">Verificar</button>
+<!--*** Novo Exercício*** -->
+
+<div id="campo1">0</div>	
+<div id="sinal">X</div>	
+<div id="campo2">0</div>	
+<div id="igual">=</div>	
+<button onclick="verificar()">VERIFICAR</button>	
+<input type="text" id="resultado"/>	
+<div style="clear:both"></div>
+
+	<!--*** Novo Exercício*** -->
+
+	<button onclick="window.location.href='http://www.google.com.br';">Ir para o Google</button>
+	
+	<button onclick="window.location.href= window.location.href;">Atualizar a página</button>
+	<br />
+	<br />
+	<br />
+
+	<div id="area1">Alguma Coisa</div><br />
+	<button onclick="document.getElementById('area1').innerHTML = prompt('Qual seu nome?');">Fazer ação</button>
+	<br /><br />
+	
+	<!--*** Novo Exercício*** -->
+	
+	<div id="area">Alguma Coisa - 2</div><br />
+	<button onclick="trocarDiv('Marcelo', 36)">Fazer ação2</button>
+	<br /><br />
+
+	<!--*** Novo Exercício*** -->
+	
+	<h3>Ingredientes do Bolo</h3>
+	<input type="text" id="ingredients">
+	<button onclick="addIngredients()">Adicionar</button>
+	<ul id="list" 
+		style= "width: 150px; 
+				background-color: #5c5c5c; 
+				color: #FFF; 
+				border: 1px solid #000; 
+				font-size: 21px; 
+				list-style: none; 
+				font-family: sans-serif; 
+				text-align: center;">
+		    
+		    <li>Item 1</li>
+		    <li>Item 2</li>
+		    <li>Item 3</li>
+		    <li>Item 4</li>
+	</ul>
+		<br /><br />
+	<!--*** Novo Exercício*** -->
+	<input type="text" name="field1" id="field1" />
+	<input type="text" name="field2" id="field2" />
+	
+	<button onclick="somar()">Somar</button>
+
+</body>
+</html>

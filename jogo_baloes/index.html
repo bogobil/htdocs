@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jogo dos Balões</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="favicon.ico">
+	<style type="text/css">
+
+		.bola {
+			width: 50px;
+			height: 50px;
+			float: right;
+			background-color: #000;
+			border-radius: 25px;
+			position: absolute;
+		}
+		#contador {
+			width: 100px;
+			height: 100px;
+			font-size: 48px;
+			border: 2px solid #f1f1f1;
+			line-height: 100px;
+			text-align: center;
+
+		}
+	</style>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body onload="startGame()">
+	<div id="contador">0</div>
+	 <div style="
+	 margin: 0px; 
+	 width: 104px; 
+	 text-align: center; 
+	 font-size: 18px; 
+	 background: #f1f1f1;">PONTOS</div>
+
+	<button style=" margin: 25px;" onclick="parar()" id="stop">PARAR</button>
+
+</body>
+</html>
